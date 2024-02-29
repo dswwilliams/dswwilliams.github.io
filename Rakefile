@@ -3,7 +3,7 @@ require "tmpdir"
 require "bundler/setup"
 require "jekyll"
 
-GITHUB_REPONAME = "ryanmcdermott/jekyll-latex"
+GITHUB_REPONAME = "davidswwilliams/personal-website"
 
 namespace :site do
   desc "Generate static site for Github"
