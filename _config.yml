@@ -10,7 +10,6 @@ author_email:       davidswwilliams@gmail.com # Your email here
 author_gravatar:    e98e5de03e97f8498caab87e85a43f9a # Your Gravatar md5 hash here for logo
 
 # Site Settings
-# url:                 https://ryanmcdermott.me/jekyll-latex # Change to your site
 baseurl:
 permalink:          /posts/:title # Post permalink
 timezone:           Europe/London # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones

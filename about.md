@@ -24,8 +24,8 @@ More broadly, my main interest is the design of techniques that allow the *robus
 {% include image.liquid url="/assets/me.png" width="300px" %}
 
 ## Code:
-*(Coming Soon)* [**ue_testing** - Benchmarking quality of neural network uncertainty estimates](www.google.com)  
-*(Coming Soon)* [**gammassl** - Training neural networks to estimate uncertainty from unlabelled data](www.google.com)  
+[**ue_testing** - Benchmarking quality of neural network uncertainty estimates](https://github.com/dswwilliams/ue_testing)  
+[**gammassl** - Training neural networks to estimate uncertainty from unlabelled data](https://github.com/dswwilliams/gammassl)  
 
 ## Publications:
 [**Masked Gamma-SSL: Learning Uncertainty Estimation via Masked Image Modeling**]({% link _posts/2024-02-27-mgssl.md %})  
