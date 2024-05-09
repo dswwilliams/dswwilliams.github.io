@@ -1,9 +1,36 @@
 <main class="main-container">
   <!-- Introductory Text Section -->
-  <section class="intro-text">
-    <p>Here's a list of posts describing past projects of mine:</p>
+  <section class="intro_title">
+    <h3>Blog posts:</h3>
   </section>
+  
   <section class="post-list">
+    {% for post in paginator.posts %}
+      {% if post.categories contains 'Blog' %}
+        <ul>
+          <li>
+            <!-- Removed the post-date div to not show dates -->
+            <div class="title">
+              <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
+            </div>
+          </li>
+        </ul>
+      {% endif %}
+    {% endfor %}
+  </section>
+  
+  
+  
+  
+  
+  <section class="intro_title">
+    <h3>Papers:</h3>
+    </section>
+
+  {% comment %} <section class="intro-text">
+    <p>Here's a list of posts describing past projects of mine:</p>
+  </section> {% endcomment %}
+  {% comment %} <section class="post-list">
     {% for post in paginator.posts %}
       {% unless post.next %}
         <h3>{{ post.date | date: '%Y' }} &#172;</h3>
@@ -28,6 +55,21 @@
         </li>
       </ul>
 
+    {% endfor %}
+  </section> {% endcomment %}
+
+  <section class="post-list">
+    {% for post in paginator.posts %}
+      {% if post.categories contains 'Papers' %}
+        <ul>
+          <li>
+            <!-- Removed the post-date div to not show dates -->
+            <div class="title">
+              <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
+            </div>
+          </li>
+        </ul>
+      {% endif %}
     {% endfor %}
   </section>
 

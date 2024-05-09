@@ -1,4 +1,4 @@
-<figure class="image" style="max-width: {{ include.width | default: '100%' }}; margin: auto; text-align: center;">
-  <img src="{{ include.url }}" alt="{{ include.description }}" style="width: {{ include.width | default: 'auto' }}; height: {{ include.height | default: 'auto' }}; display: block; margin: auto;">
+<figure class="image" style="max-width: {{ include.width | default: '100%' }}; margin: auto; text-align: center; {{ include.figure_style }}">
+  <img src="{{ include.url }}" alt="{{ include.description }}" style="width: {{ include.width | default: 'auto' }}; height: {{ include.height | default: 'auto' }}; display: block; margin: auto; {{ include.img_style }}">
   <figcaption>{{ include.description }}</figcaption>
 </figure>

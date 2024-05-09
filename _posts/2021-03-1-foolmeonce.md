@@ -1,6 +1,7 @@
 ---
 title: Fool Me Once - Robust Selective Segmentation via Out-of-Distribution Detection with Contrastive Learning
 layout: post
+categories: Papers
 ---
 <h3 align="center">Fool Me Once: Robust Selective Segmentation via Out-of-Distribution Detection with Contrastive Learning</h3>
 
