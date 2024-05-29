@@ -1,4 +1,30 @@
 <main class="main-container">
+
+  {% comment %} <!-- Section for the About link, styled like post titles -->
+  <section class="post-list">
+    <ul>
+      <li>
+        <div class="title">
+          <a href="{{ '/about' | prepend: site.baseurl | prepend: site.url }}">About</a>
+        </div>
+      </li>
+    </ul>
+  </section> {% endcomment %}
+
+  <!-- Section for the About link, styled like post titles -->
+<section class="post-list">
+  <ul style="display: flex; justify-content: center; padding: 0; list-style: none;">
+    <li>
+      <div class="title">
+        <a href="{{ '/about' | prepend: site.baseurl | prepend: site.url }}">About</a>
+      </div>
+    </li>
+  </ul>
+</section>
+
+
+
+
   <!-- Introductory Text Section -->
   <section class="intro_title">
     <h3>Blog posts:</h3>
