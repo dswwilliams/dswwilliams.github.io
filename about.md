@@ -50,4 +50,19 @@ More broadly, my main interest is the design of techniques that allow the *robus
 
 
 
+## Thesis:
+[**Chapter 1: Introduction**]({% link _posts/2024-06-08-chapter1.md %})
 
+[**Chapter 2: Introduction to Semantic Segmentation**]({% link _posts/2024-06-07-chapter2.md %})
+
+[**Chapter 3: Uncertainty Estimation in Deep Learning**]({% link _posts/2024-06-06-chapter3.md %})
+
+[**Chapter 4: Model Evaluation and Datasets**]({% link _posts/2024-06-05-chapter4.md %})
+
+[**Chapter 5: Learning OoD Detection from Large-Scale Datasets**]({% link _posts/2024-06-04-chapter5.md %})
+
+[**Chapter 6: Learning Uncertainty Estimation from Uncurated Domain Data**]({% link _posts/2024-06-03-chapter6.md %})
+
+[**Chapter 7: Learning Uncertainty Estimation with Masking & Foundation Models**]({% link _posts/2024-06-02-chapter7.md %})
+
+[**Chapter 8: Conclusion**]({% link _posts/2024-06-01-chapter8.md %})

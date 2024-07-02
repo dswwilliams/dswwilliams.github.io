@@ -1,41 +1,24 @@
 <main class="main-container">
-
-  {% comment %} <!-- Section for the About link, styled like post titles -->
+  <!-- Section for the About link, styled like post titles -->
   <section class="post-list">
-    <ul>
+    <ul style="display: flex; justify-content: center; padding: 0; list-style: none;">
       <li>
         <div class="title">
           <a href="{{ '/about' | prepend: site.baseurl | prepend: site.url }}">About</a>
         </div>
       </li>
     </ul>
-  </section> {% endcomment %}
+  </section>
 
-  <!-- Section for the About link, styled like post titles -->
-<section class="post-list">
-  <ul style="display: flex; justify-content: center; padding: 0; list-style: none;">
-    <li>
-      <div class="title">
-        <a href="{{ '/about' | prepend: site.baseurl | prepend: site.url }}">About</a>
-      </div>
-    </li>
-  </ul>
-</section>
-
-
-
-
-  <!-- Introductory Text Section -->
+  <!-- Introductory Text Section for Blog posts -->
   <section class="intro_title">
     <h3>Blog posts:</h3>
   </section>
-  
   <section class="post-list">
-    {% for post in paginator.posts %}
+    {% for post in site.posts %}
       {% if post.categories contains 'Blog' %}
         <ul>
           <li>
-            <!-- Removed the post-date div to not show dates -->
             <div class="title">
               <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
             </div>
@@ -44,52 +27,16 @@
       {% endif %}
     {% endfor %}
   </section>
-  
-  
-  
-  
-  
+
+  <!-- Introductory Text Section for Papers -->
   <section class="intro_title">
     <h3>Papers:</h3>
-    </section>
-
-  {% comment %} <section class="intro-text">
-    <p>Here's a list of posts describing past projects of mine:</p>
-  </section> {% endcomment %}
-  {% comment %} <section class="post-list">
-    {% for post in paginator.posts %}
-      {% unless post.next %}
-        <h3>{{ post.date | date: '%Y' }} &#172;</h3>
-      {% else %}
-        {% capture year %}
-          {{ post.date | date: '%Y' }}{% endcapture %}
-        {% capture nyear %}
-          {{ post.next.date | date: '%Y' }}{% endcapture %}
-        {% if year != nyear %}
-          <h3>{{ post.date | date: '%Y' }} &#172;</h3>
-        {% endif %}
-      {% endunless %}
-
-      <ul>
-        <li>
-          <div class="post-date">
-            <span>{{ post.date | date: "%b %d" }}</span>
-          </div>
-          <div class="title">
-            <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
-          </div>
-        </li>
-      </ul>
-
-    {% endfor %}
-  </section> {% endcomment %}
-
+  </section>
   <section class="post-list">
-    {% for post in paginator.posts %}
+    {% for post in site.posts %}
       {% if post.categories contains 'Papers' %}
         <ul>
           <li>
-            <!-- Removed the post-date div to not show dates -->
             <div class="title">
               <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
             </div>
@@ -99,35 +46,25 @@
     {% endfor %}
   </section>
 
-  {% if paginator.total_pages > 1 %}
-    <section class="pagination-container">
-      <div class="pagination" style="text-align: center; color: #fff; padding: 10px; border-radius: 5px;">
-        {% if paginator.previous_page %}
-          <a
-            href="{{ paginator.previous_page_path }}"
-            class="previous"
-            style="margin-right: 15px; color: #fff; text-decoration: none; padding: 5px 10px; border: 1px solid #fff; border-radius: 3px; transition: background-color 0.3s ease;">
-            Previous
-          </a>
-        {% else %}
-          <span class="previous" style="margin-right: 15px; color: #999; padding: 5px 10px; border: 1px solid #999; border-radius: 3px;">
-            Previous
-          </span>
-        {% endif %}
-        <span class="page_number " style="margin: 0 10px; color: #fff;">
-          Page: {{ paginator.page }} of {{ paginator.total_pages }}
-        </span>
-        {% if paginator.next_page %}
-          <a
-            href="{{ paginator.next_page_path }}"
-            class="next"
-            style="margin-left: 15px; color: #fff; text-decoration: none; padding: 5px 10px; border: 1px solid #fff; border-radius: 3px; transition: background-color 0.3s ease;">Next</a>
-        {% else %}
-          <span class="next" style="margin-left: 15px; color: #999; padding: 5px 10px; border: 1px solid #999; border-radius: 3px;">
-            Next
-          </span>
-        {% endif %}
-      </div>
-    </section>
-  {% endif %}
+
+  <!-- Introductory Text Section for Thesis -->
+  <section class="intro_title">
+    <h3>Thesis Chapters:</h3>
+  </section>
+  <section class="post-list">
+    {% for post in site.posts %}
+      {% if post.categories contains 'Thesis' %}
+        <ul>
+          <li>
+            <div class="title">
+              <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
+            </div>
+          </li>
+        </ul>
+      {% endif %}
+    {% endfor %}
+  </section>
+
+
+
 </main>
