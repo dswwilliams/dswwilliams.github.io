@@ -3,6 +3,11 @@ layout: page
 title: About
 ---
 
+<div style="display: flex; justify-content: space-between; margin: 0 20%;">
+  <a href="https://scholar.google.com/citations?user=uCT7j4EAAAAJ&hl=en"><strong>Google Scholar</strong></a>
+  <a href="https://github.com/dswwilliams"><strong>GitHub</strong></a>
+  <a href="https://www.linkedin.com/in/dswwwilliams"><strong>LinkedIn</strong></a>
+</div>
 
 For a number of different applications, it's really important that neural networks don't make flawed predictions. 
 As a PhD student in the Oxford Robotics Institute, I've spent the last few years researching uncertainty estimation for deep learning to address this problem in the context of safe robot deployment.
@@ -12,16 +17,10 @@ More broadly, my main interest is the design of techniques that allow the *robus
 
 
 
-
-
-
-
-<!-- For the last few years I have been researching uncertainty estimation for neural networks in the context of robotics and autonomous vehicles as part of a PhD at the Oxford Robotics Institute.  -->
-<!-- The aim has been to develop methods that train neural networks to produce either accurate and useful estimates, or express high uncertainty.     -->
-
 <br>
 
 {% include image.liquid url="/assets/me.png" width="300px" %}
+
 
 ## Code:
 [**ue_testing** - Benchmarking quality of neural network uncertainty estimates](https://github.com/dswwilliams/ue_testing)  
